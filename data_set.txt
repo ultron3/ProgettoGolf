@@ -1,0 +1,5 @@
+2024-01-23 19:34:21,723 - INFO - lettura csv corretta
+2024-01-23 19:34:59,354 - ERROR - Errore: 'utf-8' codec can't decode byte 0xf6 in position 14: invalid start byte
+2024-01-23 19:56:27,598 - INFO - lettura csv corretta
+2024-01-23 19:57:48,127 - INFO - lettura csv corretta
+2024-01-23 19:57:48,144 - INFO - None

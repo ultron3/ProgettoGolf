@@ -1,0 +1,1 @@
+2024-01-24 12:50:48,963 - DEBUG - Loaded backend qtagg version unknown.
