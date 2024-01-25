@@ -17,8 +17,6 @@ import logging
 
 # Configurazione del modulo di logging
 logging.basicConfig(filename='MWdb.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-#user=input("inser user: ")
-#password=input("inser password: ")
 try:
     mydb = mysql.connector.connect(
     host="localhost",

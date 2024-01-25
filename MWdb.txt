@@ -39,3 +39,19 @@
 2024-01-25 14:05:01,737 - INFO - option: 
 2024-01-25 14:05:01,916 - INFO - option: 
 2024-01-25 14:05:03,176 - INFO - option: 6
+2024-01-25 19:30:09,995 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 19:30:18,468 - INFO - option: 2
+2024-01-25 19:31:06,298 - INFO - option: 4
+2024-01-25 19:31:15,018 - INFO - option: zoopp
+2024-01-25 19:31:15,019 - ERROR - zoopp Invalid choice. Please select a valid option. 
+2024-01-25 19:31:26,134 - INFO - option: 1
+2024-01-25 19:31:41,326 - INFO - option: 5
+2024-01-25 19:41:02,291 - DEBUG - Loaded backend qtagg version unknown.
+2024-01-25 19:41:11,436 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 19:41:23,119 - INFO - option: 6
+2024-01-25 19:43:23,848 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 19:43:26,394 - INFO - option: 1
+2024-01-25 19:45:01,045 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 19:45:03,101 - INFO - option: 1
+2024-01-25 19:45:10,645 - INFO - option: 4
+2024-01-25 19:45:42,402 - INFO - option: 1
