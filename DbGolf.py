@@ -44,6 +44,7 @@ while True:
     print("5. Exit")
     choice = input("Enter your choice (1/2/3/4): ")
     # mostro i dati
+    logging.info(f"option: {choice}")
     if choice == "1":
         mycursor.execute("SELECT * FROM partecipanti")
       
@@ -129,4 +130,5 @@ while True:
 
     else:
         print("Invalid choice. Please select a valid option.")
-    
+        logging.error(f"{choice} Invalid choice. Please select a valid option. ")
+

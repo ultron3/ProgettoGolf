@@ -15,3 +15,27 @@
 2024-01-25 12:25:39,282 - INFO - CMySQLCursor: (Nothing executed yet)
 2024-01-25 12:25:57,257 - WARNING - 1045 (28000): Access denied for user 'hhh'@'localhost' (using password: YES)
 2024-01-25 12:27:02,633 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 13:59:34,776 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 13:59:38,825 - INFO - option: 1
+2024-01-25 14:01:38,080 - INFO - option: 5
+2024-01-25 14:02:03,697 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 14:02:07,040 - INFO - option: 1
+2024-01-25 14:03:09,442 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 14:03:11,568 - INFO - option: 1
+2024-01-25 14:03:39,135 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 14:03:40,888 - INFO - option: 1
+2024-01-25 14:03:43,900 - INFO - option: 5
+2024-01-25 14:04:38,846 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 14:04:41,181 - INFO - option: 1
+2024-01-25 14:04:48,068 - INFO - option: 5
+2024-01-25 14:04:56,807 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 14:04:59,460 - INFO - option: 1
+2024-01-25 14:05:00,376 - INFO - option: 
+2024-01-25 14:05:00,552 - INFO - option: 
+2024-01-25 14:05:01,108 - INFO - option: 
+2024-01-25 14:05:01,284 - INFO - option: 
+2024-01-25 14:05:01,428 - INFO - option: 
+2024-01-25 14:05:01,584 - INFO - option: 
+2024-01-25 14:05:01,737 - INFO - option: 
+2024-01-25 14:05:01,916 - INFO - option: 
+2024-01-25 14:05:03,176 - INFO - option: 6
