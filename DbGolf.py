@@ -16,7 +16,7 @@ import numpy as np
 import logging
 
 # Configurazione del modulo di logging
-logging.basicConfig(filename='MWdb.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='MWdb.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 try:
     mydb = mysql.connector.connect(
     host="localhost",

@@ -55,3 +55,9 @@
 2024-01-25 19:45:03,101 - INFO - option: 1
 2024-01-25 19:45:10,645 - INFO - option: 4
 2024-01-25 19:45:42,402 - INFO - option: 1
+2024-01-25 20:03:51,286 - WARNING - 1045 (28000): Access denied for user 'roo'@'localhost' (using password: YES)
+2024-01-25 20:03:55,859 - INFO - option: 1
+2024-01-25 20:04:34,581 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-25 20:04:39,541 - INFO - option: 1
+2024-01-25 20:04:41,625 - INFO - option: 1
+2024-01-25 20:04:43,313 - INFO - option: 5
