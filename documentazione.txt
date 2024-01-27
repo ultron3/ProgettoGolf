@@ -35,8 +35,9 @@ Ecco alcuni esempi di come utilizzare le funzionalità del programma:
 3. **Delete:**
    - Seleziona "Delete" e inserisci l'ID del partecipante che desideri eliminare.
 
-4. **Modified points:**
-   - Scegli "Modified points" e segui le istruzioni per aggiornare i punteggi di un partecipante.
+4. **Update:**
+   - Posso  modificare i punteggi e il circolo di provenienza.
+
 
 5. **Exit:**
    - Per chiudere il programma, seleziona "Exit".
