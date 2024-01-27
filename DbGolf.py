@@ -6,7 +6,7 @@
 
 # metodologia di lavoro: Design pattern
 
-# Nome progetto: Golden Golf Tutor
+# Nome progetto: Golden Golf Tuor
 
 import mysql.connector
 from prettytable import PrettyTable
@@ -52,7 +52,7 @@ while True:
         else:
             #utilizzo la libreria table per vedere i record  in tabella
             table = PrettyTable()
-            table.field_names = ["ID", "nome","cognome","regione_provenienza","circolo_provenienza","categoria","ultimo_torneo_partecipato","punti"]
+            table.field_names = ["ID", "nome","cognome","regione_provenienza","circolo_provenienza","categoria","ultimo_torneo_partecipato","punti_classifica_principale","punti_classifica_parziale"]
             for row in myresult:
                 table.add_row(row)
 
@@ -68,12 +68,14 @@ while True:
             categories=input("insert the categories: ")
             tournament=input("enter last tournament: ")
             points=input("insert the point: ")
+            partial_point=input("insert partial point: ")
 
-            sql = "INSERT INTO partecipanti (nome,cognome,regione_provenienza,circolo_provenienza,categoria,ultimo_torneo_partecipato,punti) VALUES (%s, %s, %s, %s,%s,%s,%s);"
-            val = (name,surname,region,circle,categories,tournament,points)
+            sql = "INSERT INTO partecipanti (nome,cognome,regione_provenienza,circolo_provenienza,categoria,ultimo_torneo_partecipato,punti_classifica_principale,punti_classifica_parziale) VALUES (%s, %s, %s, %s,%s,%s,%s,%s);"
+            val = (name,surname,region,circle,categories,tournament,points,partial_point)
             mycursor.execute(sql, val)
             mydb.commit()
             print(mycursor.rowcount, "record inserted.")
+            logging.info(mycursor.rowcount, "record inserted.")
         except Exception as e:
             logging.warning("error"+str( e))
     # elimino i dati
@@ -85,6 +87,7 @@ while True:
             mycursor.execute(sql_delete, val_delete)
             mydb.commit()
             print(mycursor.rowcount, "record(s) deleted.")
+            logging.info(mycursor.rowcount, "record(s) deleted.")
         except Exception as e:
             logging.warning("error" + str(e))
     # aggiorno i punteggi
@@ -101,7 +104,7 @@ while True:
                 surname_to_update = input("Enter the surname to update points: ")
                 new_points = input("Enter the new points: ")
 
-                sql_update = "UPDATE partecipanti SET punti = %s WHERE cognome = %s"
+                sql_update = "UPDATE partecipanti SET punti_classifica_principale = %s WHERE cognome = %s"
                 val_update = (new_points, surname_to_update)
 
                 mycursor.execute(sql_update, val_update)
@@ -117,15 +120,17 @@ while True:
                 mycursor.execute(sql_update, val_update)
                 mydb.commit()
                 print(mycursor.rowcount, "record(s) updated.")
+                logging.info(mycursor.rowcount, "record(s) updated.")
             else:
              print("Invalid choice. Please select a valid option.")
         except Exception as e:
            logging.warning("error" + str(e))
-    # chiudo i programmi
+    # chiudo il programma
     elif choice == "5":
         print("Exiting the program.")
         break
-
+    # operazione invalida
+    # ad esempio se inserisco 6 questo è l'output
     else:
         print("Invalid choice. Please select a valid option.")
         logging.error(f"{choice} Invalid choice. Please select a valid option. ")

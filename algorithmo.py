@@ -14,7 +14,7 @@ except Exception as e:
     exit()
 
 try:
-    mycursor.execute("SELECT nome, cognome, punti FROM partecipanti")
+    mycursor.execute("SELECT nome, cognome, punti_classifica_principale FROM partecipanti")
     player_data = mycursor.fetchall()
 except Exception as e:
     print("Error fetching player data:", e)
@@ -44,7 +44,10 @@ for i, (name, surname, points) in enumerate(sorted_players[:5]):
 names = [f"{name} {surname}" for name, surname, _ in sorted_players[:10]]
 scores = [points for _, _, points in sorted_players[:10]]
 
-plt.bar(names, scores, color='blue')
+# Specifica i colori per i primi e i secondi in classifica
+colors = ['red' if i == 0 else 'yellow' if i == 1 else 'blue' for i in range(len(names))]
+
+plt.bar(names, scores, color=colors)
 plt.xlabel('Giocatori')
 plt.ylabel('Punteggi')
 plt.title('Punteggi dei giocatori')
