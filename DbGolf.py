@@ -28,7 +28,7 @@ try:
     mycursor = mydb.cursor()
     logging.info(mycursor)
 except mysql.connector.Error as err:
-    logging.error(f"error: {err}")
+   logging.error(f"error: {err}")
 except Exception as e:
     print("error generics"+str(e))
     logging.warning(e)

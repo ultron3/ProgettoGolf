@@ -1,0 +1,54 @@
+PROGETTO GOLF TOUR
+
+autore: Gnavi Alex
+azienda: Max Cambi
+linguaggio utilizzato: Python 3.10
+
+BREVE INTRODUZIONE
+
+Il seguente programma è una demo di quello che sarà l'applicazione Golden Golf Tour; è un programma in console multipiattaforma
+dotato di un sistema di logging per gestire tutte le interazioni con l'utente.
+
+FUNZIONALITA'
+
+Il programma è molto semplice ha 5 funzionalità:
+- select: visualizzo in tabella tutti i dati del database;
+- insert: inserisco i dati;
+- delete: elimino i dati inserendo l'id del record;
+- update: aggiorno i dati del database;
+- exit: chiudo il programma;
+
+Si prega di notare che questo programma gestisce le query SQL in modo sicuro,
+ utilizzando parametri anziché concatenare direttamente i valori utente nelle stringhe SQL. 
+ Ciò aiuta a prevenire attacchi di SQL injection.
+
+ESEMPIO DI UTILIZZO
+
+Ecco alcuni esempi di come utilizzare le funzionalità del programma:
+
+1. **Select:**
+   - Visualizza tutti i partecipanti nel database.
+
+2. **Insert:**
+   - Per aggiungere un nuovo partecipante, seleziona l'opzione "Insert" e segui le istruzioni per inserire le informazioni richieste.
+
+3. **Delete:**
+   - Seleziona "Delete" e inserisci l'ID del partecipante che desideri eliminare.
+
+4. **Modified points:**
+   - Scegli "Modified points" e segui le istruzioni per aggiornare i punteggi di un partecipante.
+
+5. **Exit:**
+   - Per chiudere il programma, seleziona "Exit".
+
+I LOGGING
+
+Il sistema di logging è un sistema che consente di vedere tutte le interazioni con l'utente, al primo avvio del programma
+si genera un file, in questo caso lo nominato MWdb.log. Da questo file posso vedere:
+- INFO
+- ERROR
+- WARNING
+- DEBUG
+
+
+
