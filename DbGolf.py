@@ -27,8 +27,10 @@ try:
 
     mycursor = mydb.cursor()
     logging.info(mycursor)
+except mysql.connector.Error as err:
+    logging.error(f"error: {err}")
 except Exception as e:
-    print("error connection")
+    print("error generics"+str(e))
     logging.warning(e)
     
     
@@ -40,7 +42,7 @@ while True:
     print("3. Delete")
     print("4. Modified points")
     print("5. Exit")
-    choice = input("Enter your choice (1/2/3/4): ")
+    choice = input("Enter your choice (1/2/3/4/5): ")
     # mostro i dati
     logging.info(f"option: {choice}")
     if choice == "1":
