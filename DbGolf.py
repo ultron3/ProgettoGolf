@@ -31,16 +31,8 @@ except mysql.connector.Error as err:
 except Exception as e:
     print("error generics"+str(e))
     logging.warning(e)
-# Connessione al server AWS    
-try:
-    s3 = boto3.client('s3',
-                  aws_access_key_id='AKIATCKATBOR2YYHRHLS',
-                  aws_secret_access_key='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',
-                  region_name='STOCCOLMA')
-    logging.info("connessione al server aws avviata")
+  
 
-except Exception as e:
-    logging.error("connessione al server aws non eseguita"+str(e))
 
 
 while True:
