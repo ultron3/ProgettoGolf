@@ -4,8 +4,6 @@
 
 # data: 23/01/2024
 
-# metodologia di lavoro: Design pattern
-
 # Nome progetto: Golden Golf Tuor
 
 import mysql.connector
@@ -14,9 +12,10 @@ import matplotlib.pyplot as plt
 from scipy import stats
 import numpy as np
 import logging
-
+import boto3
 # Configurazione del modulo di logging
 logging.basicConfig(filename='MWdb.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# Connessione al database mysql
 try:
     mydb = mysql.connector.connect(
     host="localhost",
@@ -32,8 +31,18 @@ except mysql.connector.Error as err:
 except Exception as e:
     print("error generics"+str(e))
     logging.warning(e)
-    
-    
+# Connessione al server AWS    
+try:
+    s3 = boto3.client('s3',
+                  aws_access_key_id='AKIATCKATBOR2YYHRHLS',
+                  aws_secret_access_key='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',
+                  region_name='STOCCOLMA')
+    logging.info("connessione al server aws avviata")
+
+except Exception as e:
+    logging.error("connessione al server aws non eseguita"+str(e))
+
+
 while True:
     # opzioni disponibili
     print("Menu:")
@@ -52,13 +61,16 @@ while True:
         if not myresult:
             print("No data available.")
         else:
+            try:
             #utilizzo la libreria table per vedere i record  in tabella
-            table = PrettyTable()
-            table.field_names = ["ID", "nome","cognome","regione_provenienza","circolo_provenienza","categoria","ultimo_torneo_partecipato","punti_classifica_principale","punti_classifica_parziale"]
-            for row in myresult:
-                table.add_row(row)
+                table = PrettyTable()
+                table.field_names = ["ID", "nome","cognome","regione_provenienza","circolo_provenienza","categoria","ultimo_torneo_partecipato","punti_classifica_principale","punti_classifica_parziale"]
+                for row in myresult:
+                    table.add_row(row)
 
-            print(table)
+                print(table)
+            except Exception  as e:
+                logging.error(e)
     # inserisco i dati
     elif choice == "2":
       
@@ -77,7 +89,7 @@ while True:
             mycursor.execute(sql, val)
             mydb.commit()
             print(mycursor.rowcount, "record inserted.")
-            logging.info(mycursor.rowcount, "record inserted.")
+            logging.info( "record inserted.")
         except Exception as e:
             logging.warning("error"+str( e))
     # elimino i dati
@@ -89,7 +101,7 @@ while True:
             mycursor.execute(sql_delete, val_delete)
             mydb.commit()
             print(mycursor.rowcount, "record(s) deleted.")
-            logging.info(mycursor.rowcount, "record(s) deleted.")
+            logging.info( "record(s) deleted.")
         except Exception as e:
             logging.warning("error" + str(e))
     # aggiorno i punteggi
@@ -112,7 +124,7 @@ while True:
                 mycursor.execute(sql_update, val_update)
                 mydb.commit()
 
-                print(mycursor.rowcount, "record(s) updated.")
+                print( "record(s) updated.")
             elif update_choice == "Circle":
                 surname_to_update=input("Enter the surname to update circle:")
                 new_circle_update=input("enter the new circle: ")
@@ -122,7 +134,7 @@ while True:
                 mycursor.execute(sql_update, val_update)
                 mydb.commit()
                 print(mycursor.rowcount, "record(s) updated.")
-                logging.info(mycursor.rowcount, "record(s) updated.")
+                logging.info( "record(s) updated.")
             else:
              print("Invalid choice. Please select a valid option.")
         except Exception as e:

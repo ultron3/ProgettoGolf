@@ -110,3 +110,248 @@
 2024-01-27 12:15:06,584 - INFO - option: 1
 2024-01-27 12:18:59,364 - INFO - CMySQLCursor: (Nothing executed yet)
 2024-01-27 12:19:01,720 - INFO - option: 1
+2024-01-27 17:07:27,389 - DEBUG - Loaded backend qtagg version unknown.
+2024-01-27 17:07:33,046 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-27 17:07:41,439 - INFO - option: 2
+2024-01-27 17:09:29,194 - INFO - option: 5
+2024-01-27 17:10:33,603 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-27 17:10:36,694 - INFO - option: 1
+2024-01-27 17:10:54,927 - INFO - option: 3
+2024-01-27 17:11:10,489 - INFO - option: 1
+2024-01-27 17:11:39,743 - INFO - option: 5
+2024-01-27 17:13:28,392 - DEBUG - Loaded backend qtagg version unknown.
+2024-01-27 17:13:34,823 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-27 17:13:41,839 - INFO - option: 1
+2024-01-27 17:14:15,072 - INFO - option: 4
+2024-01-27 17:15:10,796 - INFO - option: 1
+2024-01-27 17:16:34,580 - INFO - option: 2
+2024-01-27 17:27:10,867 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-27 17:27:13,734 - INFO - option: 2
+2024-01-27 17:29:13,582 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-27 17:29:15,774 - INFO - option: 2
+2024-01-27 17:29:44,206 - INFO - record inserted.
+2024-01-27 17:29:48,940 - INFO - option: 1
+2024-01-27 17:31:11,080 - INFO - option:     5
+2024-01-27 17:31:11,086 - ERROR -     5 Invalid choice. Please select a valid option. 
+2024-01-27 17:31:15,762 - INFO - option: 1
+2024-01-28 09:47:54,375 - DEBUG - Loaded backend qtagg version unknown.
+2024-01-28 09:48:00,190 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-28 09:48:02,563 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-01-28 09:48:02,566 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-01-28 09:48:02,570 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-01-28 09:48:02,576 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-01-28 09:48:02,577 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-01-28 09:48:02,578 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-01-28 09:48:02,579 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-01-28 09:48:02,583 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-01-28 09:48:02,583 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-01-28 09:48:02,583 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-01-28 09:48:02,583 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-01-28 09:48:02,588 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+2024-01-28 09:48:02,602 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\sdk-default-configuration.json
+2024-01-28 09:48:02,602 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000029E0C8FA560>
+2024-01-28 09:48:02,671 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json.gz
+2024-01-28 09:48:02,735 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\endpoint-rule-set-1.json.gz
+2024-01-28 09:48:02,735 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\partitions.json
+2024-01-28 09:48:02,735 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000029E0C82F400>
+2024-01-28 09:48:02,735 - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000029E0E1CD480>
+2024-01-28 09:48:02,783 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000029E0C82F1C0>
+2024-01-28 09:48:02,784 - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-01-28 09:48:02,785 - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-01-28 09:48:02,785 - DEBUG - Looking for endpoint for s3 via: config_service
+2024-01-28 09:48:02,785 - DEBUG - Looking for endpoint for s3 via: config_global
+2024-01-28 09:48:02,785 - DEBUG - No configured endpoint found.
+2024-01-28 09:48:02,787 - DEBUG - Creating a regex based endpoint for s3, STOCCOLMA
+2024-01-28 09:48:02,794 - DEBUG - Setting s3 timeout as (60, 60)
+2024-01-28 09:48:02,799 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+2024-01-28 09:48:02,800 - DEBUG - Registering retry handlers for service: s3
+2024-01-28 09:48:02,800 - DEBUG - Registering S3 region redirector handler
+2024-01-28 09:48:02,801 - DEBUG - Registering S3Express Identity Resolver
+2024-01-28 09:48:03,377 - INFO - connessione al server aws avviata
+2024-01-28 09:48:12,117 - INFO - option: 1
+2024-01-28 09:48:37,962 - INFO - option: 5
+2024-01-28 14:08:15,759 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-28 14:08:15,766 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-01-28 14:08:15,766 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-01-28 14:08:15,770 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-01-28 14:08:15,770 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-01-28 14:08:15,774 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-01-28 14:08:15,775 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-01-28 14:08:15,775 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-01-28 14:08:15,775 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-01-28 14:08:15,775 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-01-28 14:08:15,775 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-01-28 14:08:15,775 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-01-28 14:08:15,775 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+2024-01-28 14:08:15,790 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\sdk-default-configuration.json
+2024-01-28 14:08:15,790 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x000001F48BE904C0>
+2024-01-28 14:08:16,042 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json.gz
+2024-01-28 14:08:16,368 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\endpoint-rule-set-1.json.gz
+2024-01-28 14:08:16,376 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\partitions.json
+2024-01-28 14:08:16,376 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000001F48BDFAD40>
+2024-01-28 14:08:16,376 - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000001F4E8C03E20>
+2024-01-28 14:08:16,585 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000001F48BDFAB00>
+2024-01-28 14:08:16,585 - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-01-28 14:08:16,585 - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-01-28 14:08:16,585 - DEBUG - Looking for endpoint for s3 via: config_service
+2024-01-28 14:08:16,585 - DEBUG - Looking for endpoint for s3 via: config_global
+2024-01-28 14:08:16,585 - DEBUG - No configured endpoint found.
+2024-01-28 14:08:16,590 - DEBUG - Creating a regex based endpoint for s3, STOCCOLMA
+2024-01-28 14:08:16,594 - DEBUG - Setting s3 timeout as (60, 60)
+2024-01-28 14:08:16,642 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+2024-01-28 14:08:16,642 - DEBUG - Registering retry handlers for service: s3
+2024-01-28 14:08:16,642 - DEBUG - Registering S3 region redirector handler
+2024-01-28 14:08:16,642 - DEBUG - Registering S3Express Identity Resolver
+2024-01-28 14:08:16,642 - INFO - connessione al server aws avviata
+2024-01-28 14:09:39,327 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-01-28 14:09:39,327 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-01-28 14:09:39,327 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+2024-01-28 14:09:39,343 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\sdk-default-configuration.json
+2024-01-28 14:09:39,343 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x000001FC4A60C4C0>
+2024-01-28 14:09:39,390 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json.gz
+2024-01-28 14:09:39,453 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\endpoint-rule-set-1.json.gz
+2024-01-28 14:09:39,453 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\partitions.json
+2024-01-28 14:09:39,453 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000001FC4A576D40>
+2024-01-28 14:09:39,453 - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x000001FC276C3E20>
+2024-01-28 14:09:39,468 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000001FC4A576B00>
+2024-01-28 14:09:39,468 - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-01-28 14:09:39,468 - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-01-28 14:09:39,468 - DEBUG - Looking for endpoint for s3 via: config_service
+2024-01-28 14:09:39,468 - DEBUG - Looking for endpoint for s3 via: config_global
+2024-01-28 14:09:39,468 - DEBUG - No configured endpoint found.
+2024-01-28 14:09:39,468 - DEBUG - Creating a regex based endpoint for s3, STOCCOLMA
+2024-01-28 14:09:39,484 - DEBUG - Setting s3 timeout as (60, 60)
+2024-01-28 14:09:39,484 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+2024-01-28 14:09:39,484 - DEBUG - Registering retry handlers for service: s3
+2024-01-28 14:09:39,484 - DEBUG - Registering S3 region redirector handler
+2024-01-28 14:09:39,484 - DEBUG - Registering S3Express Identity Resolver
+2024-01-28 14:09:39,484 - INFO - connessione al server aws avviata
+2024-01-28 14:09:43,699 - INFO - option: 6
+2024-01-28 14:09:43,700 - ERROR - 6 Invalid choice. Please select a valid option. 
+2024-01-28 14:09:45,796 - INFO - option: 5
+2024-01-28 14:10:22,171 - DEBUG - Loaded backend qtagg version unknown.
+2024-01-28 14:10:25,900 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-28 14:10:28,168 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-01-28 14:10:28,174 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-01-28 14:10:28,176 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-01-28 14:10:28,181 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-01-28 14:10:28,182 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-01-28 14:10:28,184 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-01-28 14:10:28,185 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-01-28 14:10:28,190 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-01-28 14:10:28,190 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-01-28 14:10:28,191 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-01-28 14:10:28,191 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-01-28 14:10:28,199 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+2024-01-28 14:10:28,217 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\sdk-default-configuration.json
+2024-01-28 14:10:28,218 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000020CE586A560>
+2024-01-28 14:10:28,305 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json.gz
+2024-01-28 14:10:28,404 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\endpoint-rule-set-1.json.gz
+2024-01-28 14:10:28,404 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\partitions.json
+2024-01-28 14:10:28,404 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000020CE579B400>
+2024-01-28 14:10:28,421 - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000020CE5B1F5B0>
+2024-01-28 14:10:28,461 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000020CE579B1C0>
+2024-01-28 14:10:28,461 - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-01-28 14:10:28,461 - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-01-28 14:10:28,461 - DEBUG - Looking for endpoint for s3 via: config_service
+2024-01-28 14:10:28,461 - DEBUG - Looking for endpoint for s3 via: config_global
+2024-01-28 14:10:28,463 - DEBUG - No configured endpoint found.
+2024-01-28 14:10:28,464 - DEBUG - Creating a regex based endpoint for s3, STOCCOLMA
+2024-01-28 14:10:28,470 - DEBUG - Setting s3 timeout as (60, 60)
+2024-01-28 14:10:28,472 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+2024-01-28 14:10:28,472 - DEBUG - Registering retry handlers for service: s3
+2024-01-28 14:10:28,472 - DEBUG - Registering S3 region redirector handler
+2024-01-28 14:10:28,472 - DEBUG - Registering S3Express Identity Resolver
+2024-01-28 14:10:29,267 - INFO - connessione al server aws avviata
+2024-01-28 14:12:21,538 - DEBUG - Loaded backend qtagg version unknown.
+2024-01-28 14:12:24,873 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-28 14:12:27,006 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-01-28 14:12:27,011 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-01-28 14:12:27,013 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-01-28 14:12:27,016 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-01-28 14:12:27,016 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-01-28 14:12:27,018 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-01-28 14:12:27,019 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-01-28 14:12:27,027 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-01-28 14:12:27,028 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-01-28 14:12:27,028 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-01-28 14:12:27,028 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-01-28 14:12:27,035 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+2024-01-28 14:12:27,050 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\sdk-default-configuration.json
+2024-01-28 14:12:27,050 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000025A77E8A560>
+2024-01-28 14:12:27,123 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json.gz
+2024-01-28 14:12:27,194 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\endpoint-rule-set-1.json.gz
+2024-01-28 14:12:27,194 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\partitions.json
+2024-01-28 14:12:27,194 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000025A77DBF400>
+2024-01-28 14:12:27,194 - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000025A7975D480>
+2024-01-28 14:12:27,253 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000025A77DBF1C0>
+2024-01-28 14:12:27,253 - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-01-28 14:12:27,253 - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-01-28 14:12:27,253 - DEBUG - Looking for endpoint for s3 via: config_service
+2024-01-28 14:12:27,253 - DEBUG - Looking for endpoint for s3 via: config_global
+2024-01-28 14:12:27,253 - DEBUG - No configured endpoint found.
+2024-01-28 14:12:27,253 - DEBUG - Creating a regex based endpoint for s3, STOCCOLMA
+2024-01-28 14:12:27,269 - DEBUG - Setting s3 timeout as (60, 60)
+2024-01-28 14:12:27,285 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+2024-01-28 14:12:27,285 - DEBUG - Registering retry handlers for service: s3
+2024-01-28 14:12:27,285 - DEBUG - Registering S3 region redirector handler
+2024-01-28 14:12:27,285 - DEBUG - Registering S3Express Identity Resolver
+2024-01-28 14:12:29,592 - INFO - connessione al server aws avviata
+2024-01-30 21:03:00,475 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-01-30 21:03:00,477 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-01-30 21:03:00,479 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-01-30 21:03:00,479 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-01-30 21:03:00,481 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-01-30 21:03:00,481 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-01-30 21:03:00,482 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-01-30 21:03:00,482 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-01-30 21:03:00,486 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-01-30 21:03:00,486 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-01-30 21:03:00,486 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-01-30 21:03:00,487 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-01-30 21:03:00,491 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\endpoints.json
+2024-01-30 21:03:00,510 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\sdk-default-configuration.json
+2024-01-30 21:03:00,511 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x00000188799604C0>
+2024-01-30 21:03:00,868 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json.gz
+2024-01-30 21:03:01,007 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\s3\2006-03-01\endpoint-rule-set-1.json.gz
+2024-01-30 21:03:01,016 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\partitions.json
+2024-01-30 21:03:01,018 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x00000188798CAD40>
+2024-01-30 21:03:01,018 - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000018856693E20>
+2024-01-30 21:03:01,069 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x00000188798CAB00>
+2024-01-30 21:03:01,070 - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-01-30 21:03:01,070 - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-01-30 21:03:01,070 - DEBUG - Looking for endpoint for s3 via: config_service
+2024-01-30 21:03:01,070 - DEBUG - Looking for endpoint for s3 via: config_global
+2024-01-30 21:03:01,070 - DEBUG - No configured endpoint found.
+2024-01-30 21:03:01,071 - DEBUG - Creating a regex based endpoint for s3, STOCCOLMA
+2024-01-30 21:03:01,073 - DEBUG - Setting s3 timeout as (60, 60)
+2024-01-30 21:03:01,115 - DEBUG - Loading JSON file: C:\Users\IdeaPad\AppData\Local\Programs\Python\Python310\lib\site-packages\botocore\data\_retry.json
+2024-01-30 21:03:01,115 - DEBUG - Registering retry handlers for service: s3
+2024-01-30 21:03:01,115 - DEBUG - Registering S3 region redirector handler
+2024-01-30 21:03:01,116 - DEBUG - Registering S3Express Identity Resolver
+2024-01-30 21:03:01,116 - INFO - connessione al server aws avviata
+2024-01-30 21:03:03,645 - INFO - option: 1
+2024-01-30 21:03:42,962 - INFO - option: 3
+2024-01-30 21:03:44,898 - INFO - record(s) deleted.
+2024-01-30 21:03:46,474 - INFO - option: 1
+2024-01-30 21:04:12,889 - INFO - option: 
+2024-01-30 21:04:12,890 - ERROR -  Invalid choice. Please select a valid option. 
+2024-01-30 21:04:12,956 - INFO - option: 
+2024-01-30 21:04:12,958 - ERROR -  Invalid choice. Please select a valid option. 
+2024-01-30 21:04:13,147 - INFO - option: 
+2024-01-30 21:04:13,148 - ERROR -  Invalid choice. Please select a valid option. 
+2024-01-30 21:04:13,796 - INFO - option: 
+2024-01-30 21:04:13,796 - ERROR -  Invalid choice. Please select a valid option. 
+2024-01-30 21:04:19,920 - INFO - option: 6
+2024-01-30 21:04:19,920 - ERROR - 6 Invalid choice. Please select a valid option. 
+2024-01-30 21:04:23,731 - INFO - option: 5
