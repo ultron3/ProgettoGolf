@@ -133,6 +133,26 @@ while True:
            logging.warning("error" + str(e))
     # chiudo il programma
     elif choice == "5":
+        # Plot scores on a graph
+        try:
+            mycursor.execute("SELECT cognome, punti_classifica_principale FROM partecipanti")
+            myresult = mycursor.fetchall()
+
+            if not myresult:
+                print("No data available for plotting.")
+            else:
+                names, scores = zip(*myresult)
+
+                plt.bar(names, scores)
+                plt.xlabel('Surname')
+                plt.ylabel('Points')
+                plt.title('Scores Distribution')
+                plt.show()
+
+        except Exception as e:
+            logging.warning("error" + str(e))
+    
+    elif choice == "6":
         print("Exiting the program.")
         break
     # operazione invalida
