@@ -29,9 +29,11 @@ Here are some examples of how to use the program's features:
 
 4. **Update:**
     - I can change the scores and the club of origin.
+5. **Plot:**
+  - I print the graph with the main ranking points![classifica](https://github.com/ultron3/ProgettoGolf/assets/104757961/f06eb360-ce64-444c-ae81-60943e2ad99b)
 
 
-5. **Exit:**
+6. **Exit:**
     - To close the program, select "Exit".
 
 LOGGINGS
