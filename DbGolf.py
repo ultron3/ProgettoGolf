@@ -9,10 +9,9 @@
 import mysql.connector
 from prettytable import PrettyTable
 import matplotlib.pyplot as plt
-from scipy import stats
-import numpy as np
+
 import logging
-import boto3
+
 # Configurazione del modulo di logging
 logging.basicConfig(filename='MWdb.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 # Connessione al database mysql
