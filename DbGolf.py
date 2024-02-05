@@ -9,7 +9,6 @@
 import mysql.connector
 from prettytable import PrettyTable
 import matplotlib.pyplot as plt
-
 import logging
 
 # Configurazione del modulo di logging
@@ -41,8 +40,9 @@ while True:
     print("2. Insert")
     print("3. Delete")
     print("4. Modified points")
-    print("5. Exit")
-    choice = input("Enter your choice (1/2/3/4/5): ")
+    print("5. Plot")
+    print("6. exit")
+    choice = input("Enter your choice (1/2/3/4/5/6): ")
     # mostro i dati
     logging.info(f"option: {choice}")
     if choice == "1":
@@ -142,12 +142,17 @@ while True:
             else:
                 names, scores = zip(*myresult)
 
-                plt.bar(names, scores)
-                plt.xlabel('Surname')
-                plt.ylabel('Points')
-                plt.title('Scores Distribution')
-                plt.show()
+            # Divide i dati in primi e secondi
+            first_place = scores[:len(scores)//2]
+            second_place = scores[len(scores)//2:]
 
+              # Assegna il colore corrispondente a ciascuna barra
+            colors = ['red' if score in first_place else 'yellow' if score in second_place else 'blue' for score in scores]
+            plt.bar(names, scores, color=colors)
+            plt.xlabel('Surname')
+            plt.ylabel('Points')
+            plt.title('Scores Distribution')
+            plt.show()
         except Exception as e:
             logging.warning("error" + str(e))
     

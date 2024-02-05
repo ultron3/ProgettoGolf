@@ -1,0 +1,108 @@
+import tensorflow as tf
+from tensorflow import keras
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+import numpy as np
+import pandas as pd
+import mysql.connector
+import logging
+import matplotlib.pyplot as plt
+
+# Connessione al database
+try:
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="golfclub",
+        database="golfclub"  # Specifico il database da utilizzare
+    )
+    mycursor = mydb.cursor()
+except Exception as e:
+    logging.warning("Errore nella connessione al database: " + str(e))
+
+# Estrai i dati dal database
+try:
+    mycursor.execute("SELECT punti_totali FROM partecipanti")
+    myresult = mycursor.fetchall()
+
+    if not myresult:
+        print("Nessun dato disponibile per l'addestramento del modello.")
+    else:
+        # Estrai i punteggi come stringhe
+        scores_str = [result[0] for result in myresult]
+
+        # Converti i punteggi in numeri
+        scores = pd.to_numeric(scores_str, errors='coerce')
+
+        # Considera un'ipotetica feature aggiuntiva (ad esempio, l'ID del giocatore)
+        # Nel caso in cui hai ulteriori feature, includile nel processo di addestramento.
+
+        # Creazione di un'ipotetica lista di ID giocatori per scopi dimostrativi
+        player_ids = list(range(1, len(scores)+1))
+
+        # Prepara i dati di input e output per il modello
+        X = np.array(player_ids).reshape(-1, 1)  # Input feature (potrebbe essere aggiunta l'età, esperienza, etc.)
+        y = np.array(scores)  # Output (punteggi)
+
+        # Divide i dati in set di addestramento e test
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+        # Standardizza i dati
+        scaler = StandardScaler()
+        X_train_scaled = scaler.fit_transform(X_train)
+        X_test_scaled = scaler.transform(X_test)
+
+        # Costruzione del modello
+        model = keras.Sequential([
+            keras.layers.Dense(64, activation='relu', input_shape=(X_train.shape[1],)),
+            keras.layers.Dense(1)  # Output layer
+        ])
+
+        # Compila il modello
+        model.compile(optimizer='adam', loss='mean_squared_error')
+
+        # Addestra il modello
+        model.fit(X_train_scaled, y_train, epochs=50, batch_size=16, validation_data=(X_test_scaled, y_test))
+
+        # Fai una predizione per tutti i giocatori
+        all_players_scaled = scaler.transform(np.array(player_ids).reshape(-1, 1))
+        predicted_scores = model.predict(all_players_scaled)
+
+        # Calcola la differenza assoluta tra i punteggi reali e quelli previsti
+        differences = np.abs(scores - predicted_scores.flatten())
+
+        # Trova l'ID del giocatore con la maggiore discrepanza
+        improvement_candidate_id = np.argmax(differences)
+        improvement_candidate_score = scores[improvement_candidate_id]
+        improvement_candidate_predicted_score = predicted_scores[improvement_candidate_id][0]
+
+        #print(f"Il giocatore che può migliorare di più è il giocatore con ID {improvement_candidate_id + 1}."
+             # f" Il suo punteggio reale è {improvement_candidate_score:.2f},"
+              #f" mentre il punteggio previsto è {improvement_candidate_predicted_score:.2f}."
+              #f" Differenza: {differences[improvement_candidate_id]:.2f}")
+
+        # Trova il giocatore con il punteggio previsto più alto
+        best_player_id = np.argmax(predicted_scores)
+        best_player_score = predicted_scores[best_player_id][0]
+
+        #print(f"Il miglior giocatore è il giocatore con ID {best_player_id + 1} con un punteggio previsto di {best_player_score:.2f}")
+
+        # Visualizza un grafico dei punteggi previsti
+        plt.scatter(player_ids, scores, label='Punteggi reali')
+        plt.plot(player_ids, predicted_scores, color='red', label='Punteggi previsti')
+        plt.xlabel('ID Giocatore')
+        plt.ylabel('Punteggio')
+        plt.title('Confronto tra Punteggi Reali e Punteggi Previsti')
+        plt.legend()
+        plt.show()
+
+        # Aggiunta dell'ID associato al migliorabile e al miglior giocatore
+       # print(f"ID del migliorabile: {improvement_candidate_id + 1}")
+       # print(f"ID del miglior giocatore: {best_player_id + 1}")
+
+except Exception as e:
+    logging.warning("Errore nell'estrazione dei dati dal database: " + str(e))
+finally:
+    # Chiudi la connessione al database alla fine
+    mycursor.close()
+    mydb.close()
