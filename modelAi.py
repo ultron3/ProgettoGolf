@@ -21,27 +21,28 @@ except Exception as e:
     logging.warning("Errore nella connessione al database: " + str(e))
 
 # Estrai i dati dal database
+# Estrai i dati dal database
 try:
-    mycursor.execute("SELECT id,punti_totali FROM partecipanti")
+    mycursor.execute("SELECT id, nome, punti_totali, punti_classifica_parziale FROM partecipanti")
     myresult = mycursor.fetchall()
 
     if not myresult:
         print("Nessun dato disponibile per l'addestramento del modello.")
     else:
-        # Estrai gli ID e i punteggi come liste separate
+        # Estrai gli ID, nomi e punteggi come liste separate
         player_ids = [result[0] for result in myresult]
-        
-        scores_str = [result[1] for result in myresult]
+        player_names = [result[1] for result in myresult]
+        scores_str = [result[2] for result in myresult]
+        partial_scores = [result[3] for result in myresult]
 
         # Converti i punteggi in numeri
         scores = pd.to_numeric(scores_str, errors='coerce')
-
 
         # Considera un'ipotetica feature aggiuntiva (ad esempio, l'ID del giocatore)
         # Nel caso in cui hai ulteriori feature, includile nel processo di addestramento.
 
         # Creazione di un'ipotetica lista di ID giocatori per scopi dimostrativi
-        player_ids = list(range(1, len(scores)+1))
+        player_ids = list(range(1, len(scores) + 1))
 
         # Prepara i dati di input e output per il modello
         X = np.array(player_ids).reshape(-1, 1)  # Input feature (potrebbe essere aggiunta l'età, esperienza, etc.)
@@ -74,18 +75,20 @@ try:
         # Calcola la differenza assoluta tra i punteggi reali e quelli previsti
         differences = np.abs(scores - predicted_scores.flatten())
 
-        # Trova l'ID del giocatore con la maggiore discrepanza
-        improvement_candidate_id = np.argmax(differences)
-        improvement_candidate_score = scores[improvement_candidate_id]
-        improvement_candidate_predicted_score = predicted_scores[improvement_candidate_id][0]
+        # Trova gli ID dei giocatori con la massima discrepanza
+        improvement_candidate_ids = np.where(differences == np.max(differences))[0]
 
-        print(f"Il miglior giocatore è  il giocatore con ID {improvement_candidate_id + 1}.")
+        for improvement_candidate_id in improvement_candidate_ids:
+            improvement_candidate_name = player_names[improvement_candidate_id]
+            improvement_candidate_score = scores[improvement_candidate_id]
+            improvement_candidate_predicted_score = predicted_scores[improvement_candidate_id][0]
+            print(f"Il miglior giocatore è il giocatore {improvement_candidate_name} con ID {improvement_candidate_id + 1}.")
 
         # Trova il giocatore con il punteggio previsto più alto
         best_player_id = np.argmax(predicted_scores)
+        best_player_name = player_names[best_player_id]
         best_player_score = predicted_scores[best_player_id][0]
 
-      
         # Visualizza un grafico dei punteggi previsti
         plt.scatter(player_ids, scores, label='Punteggi reali')
         plt.plot(player_ids, predicted_scores, color='red', label='Punteggi previsti')
@@ -94,8 +97,6 @@ try:
         plt.title('Confronto tra Punteggi Reali e Punteggi Previsti')
         plt.legend()
         plt.show()
-
-       
 
 except Exception as e:
     logging.warning("Errore nell'estrazione dei dati dal database: " + str(e))
