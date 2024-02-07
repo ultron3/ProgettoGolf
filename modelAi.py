@@ -30,6 +30,7 @@ try:
     else:
         # Estrai gli ID e i punteggi come liste separate
         player_ids = [result[0] for result in myresult]
+        
         scores_str = [result[1] for result in myresult]
 
         # Converti i punteggi in numeri
