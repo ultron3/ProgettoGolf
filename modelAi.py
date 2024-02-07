@@ -22,17 +22,19 @@ except Exception as e:
 
 # Estrai i dati dal database
 try:
-    mycursor.execute("SELECT punti_totali FROM partecipanti")
+    mycursor.execute("SELECT id,punti_totali FROM partecipanti")
     myresult = mycursor.fetchall()
 
     if not myresult:
         print("Nessun dato disponibile per l'addestramento del modello.")
     else:
-        # Estrai i punteggi come stringhe
-        scores_str = [result[0] for result in myresult]
+        # Estrai gli ID e i punteggi come liste separate
+        player_ids = [result[0] for result in myresult]
+        scores_str = [result[1] for result in myresult]
 
         # Converti i punteggi in numeri
         scores = pd.to_numeric(scores_str, errors='coerce')
+
 
         # Considera un'ipotetica feature aggiuntiva (ad esempio, l'ID del giocatore)
         # Nel caso in cui hai ulteriori feature, includile nel processo di addestramento.
@@ -76,17 +78,13 @@ try:
         improvement_candidate_score = scores[improvement_candidate_id]
         improvement_candidate_predicted_score = predicted_scores[improvement_candidate_id][0]
 
-        #print(f"Il giocatore che può migliorare di più è il giocatore con ID {improvement_candidate_id + 1}."
-             # f" Il suo punteggio reale è {improvement_candidate_score:.2f},"
-              #f" mentre il punteggio previsto è {improvement_candidate_predicted_score:.2f}."
-              #f" Differenza: {differences[improvement_candidate_id]:.2f}")
+        print(f"Il miglior giocatore è  il giocatore con ID {improvement_candidate_id + 1}.")
 
         # Trova il giocatore con il punteggio previsto più alto
         best_player_id = np.argmax(predicted_scores)
         best_player_score = predicted_scores[best_player_id][0]
 
-        #print(f"Il miglior giocatore è il giocatore con ID {best_player_id + 1} con un punteggio previsto di {best_player_score:.2f}")
-
+      
         # Visualizza un grafico dei punteggi previsti
         plt.scatter(player_ids, scores, label='Punteggi reali')
         plt.plot(player_ids, predicted_scores, color='red', label='Punteggi previsti')
@@ -96,9 +94,7 @@ try:
         plt.legend()
         plt.show()
 
-        # Aggiunta dell'ID associato al migliorabile e al miglior giocatore
-       # print(f"ID del migliorabile: {improvement_candidate_id + 1}")
-       # print(f"ID del miglior giocatore: {best_player_id + 1}")
+       
 
 except Exception as e:
     logging.warning("Errore nell'estrazione dei dati dal database: " + str(e))
