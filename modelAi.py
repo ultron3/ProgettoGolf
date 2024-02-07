@@ -20,7 +20,7 @@ try:
 except Exception as e:
     logging.warning("Errore nella connessione al database: " + str(e))
 
-# Estrai i dati dal database
+
 # Estrai i dati dal database
 try:
     mycursor.execute("SELECT id, nome, punti_totali, punti_classifica_parziale FROM partecipanti")
