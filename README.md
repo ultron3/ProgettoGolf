@@ -44,3 +44,9 @@ a file is generated, in this case named MWdb.log. From this file I can see:
 - ERROR
 - WARNING
 - DEBUG
+
+MODELAI.PY
+This file contains a template for data analysis. It connects to the database, takes the total scores and analyzes them to determine the best player.
+At the end it prints a graph.
+![tensorflow_model](https://github.com/ultron3/ProgettoGolf/assets/104757961/4334cf93-5170-4c5b-a6fc-b2ec9523b5a2)
+
