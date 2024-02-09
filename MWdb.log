@@ -15459,3 +15459,40 @@
 2024-02-07 14:20:35,071 - DEBUG - findfont: score(FontEntry(fname='C:\\WINDOWS\\Fonts\\GILI____.TTF', name='Gill Sans MT', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
 2024-02-07 14:20:35,071 - DEBUG - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\IdeaPad\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
 2024-02-07 14:20:50,682 - INFO - option: 4
+2024-02-07 19:51:56,937 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-02-07 19:51:58,633 - INFO - option: 1
+2024-02-07 19:51:58,635 - ERROR - Row has incorrect number of values, (actual) 10!=9 (expected)
+2024-02-07 19:52:01,142 - INFO - option: 1
+2024-02-07 19:52:01,145 - ERROR - Row has incorrect number of values, (actual) 10!=9 (expected)
+2024-02-07 19:52:01,737 - INFO - option: 
+2024-02-07 19:52:01,738 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:02,077 - INFO - option: 
+2024-02-07 19:52:02,078 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:02,241 - INFO - option: 
+2024-02-07 19:52:02,241 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:02,393 - INFO - option: 
+2024-02-07 19:52:02,393 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:02,545 - INFO - option: 
+2024-02-07 19:52:02,546 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:02,698 - INFO - option: 
+2024-02-07 19:52:02,699 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:02,850 - INFO - option: 
+2024-02-07 19:52:02,850 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:02,995 - INFO - option: 
+2024-02-07 19:52:02,996 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:03,146 - INFO - option: 
+2024-02-07 19:52:03,147 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:03,297 - INFO - option: 
+2024-02-07 19:52:03,298 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:04,977 - INFO - option: 
+2024-02-07 19:52:04,978 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:05,137 - INFO - option: 
+2024-02-07 19:52:05,137 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:05,277 - INFO - option: 
+2024-02-07 19:52:05,278 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:52:05,429 - INFO - option: 
+2024-02-07 19:52:05,430 - ERROR -  Invalid choice. Please select a valid option. 
+2024-02-07 19:53:53,079 - DEBUG - Loaded backend qtagg version unknown.
+2024-02-07 19:53:57,456 - INFO - CMySQLCursor: (Nothing executed yet)
+2024-02-07 19:54:05,651 - INFO - option: 1
+2024-02-07 19:54:15,518 - ERROR - Row has incorrect number of values, (actual) 10!=9 (expected)
