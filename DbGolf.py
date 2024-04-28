@@ -18,8 +18,8 @@ try:
     mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="golfclub",
-    database="golfclub"  # Specifico il database da utilizzare
+    password="",
+    database=""  # Specifico il database da utilizzare
     )
 
     mycursor = mydb.cursor()
